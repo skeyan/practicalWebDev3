@@ -1,5 +1,5 @@
 # practicalWebDev3
-Assignment #3 for Practical Web Development
+Assignment #3 for Practical Web Development: Gridmaker (DOM)
 
 **Goal**    
 To further demonstrate an understanding of git/GitHub, HTML, CSS, JS, DOM manipulation, and handling user events
@@ -7,7 +7,7 @@ To further demonstrate an understanding of git/GitHub, HTML, CSS, JS, DOM manipu
 **Team Members**  
 - TBA
 
-**User Stories**
+**User Stories**  
 As a user, I can:
 - [ ] add rows to the grid
 - [ ] add columns to the grid
