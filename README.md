@@ -4,6 +4,8 @@ Assignment #3 for Practical Web Development: Gridmaker (DOM)
 **Goal**    
 To further demonstrate an understanding of git/GitHub, HTML, CSS, JS, DOM manipulation, and handling user events
 
+**Github pages:** https://skeyan.github.io/practicalWebDev3/
+
 **Team Members**  
 - TBA
 
