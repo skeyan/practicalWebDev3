@@ -4,8 +4,6 @@ let colorSelected;
 
 //Add a row
 function addR() {
-    console.log("Clicked Add Row");
-
     /* Add new row element to table */
     let table = document.getElementById("grid");
     let newRow = document.createElement("tr");
@@ -16,9 +14,10 @@ function addR() {
         table.appendChild(newRow);
 
         /* Increment count */
-        numRows += 1;
-        numCols += 1;
+        numRows++;
+        numCols++;
     } else {
+        /* Populate the new row with column count */
         for (let i = 0; i < numCols; i++) {
             let newCol = document.createElement("td");
             newRow.appendChild(newCol);
@@ -26,7 +25,7 @@ function addR() {
         table.appendChild(newRow);
 
         /* Increment count */
-        numRows += 1;
+        numRows++;
     }
 }
 //Add a column
