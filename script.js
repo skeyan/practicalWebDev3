@@ -30,7 +30,29 @@ function addR() {
 }
 //Add a column
 function addC() {
-    alert("Clicked Add Col")
+    /* Add new col element to table */
+    let table = document.getElementById("grid");
+
+    if (numRows == 0) { // Edge case
+        let newRow = document.createElement("tr");
+        let newCol = document.createElement("td");
+        newRow.appendChild(newCol);
+        table.appendChild(newRow);
+
+        /* Increment count */
+        numRows++;
+        numCols++;
+    } else {
+        /* Populate all existing rows with the new column */
+        let curRow = document.getElementsByTagName("tr");
+        for (let i = 0; i < numRows; i++) {
+            let newCol = document.createElement("td");
+            curRow[i].appendChild(newCol);
+        }
+
+        /* Increment count */
+        numCols++;
+    }
 }
 
 //Remove a row
