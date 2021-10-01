@@ -11,8 +11,8 @@ To further demonstrate an understanding of git/GitHub, HTML, CSS, JS, DOM manipu
 
 **User Stories**  
 As a user, I can:
-- [ ] add rows to the grid
-- [ ] add columns to the grid
+- [X] add rows to the grid
+- [X] add columns to the grid
 - [ ] remove rows from the grid
 - [ ] remove columns from the grid
 - [ ] select a color from a dropdown menu of colors
