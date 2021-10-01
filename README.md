@@ -7,12 +7,15 @@ To further demonstrate an understanding of git/GitHub, HTML, CSS, JS, DOM manipu
 **Github pages:** https://skeyan.github.io/practicalWebDev3/
 
 **Team Members**  
-- TBA
+- Eva Yan (skeyan)
+- Jungah Ahn (jungaha23)
+- Hilarion Reyes (Jamswhat2)
+- Muhammad Tanveer (tanveerm176)
 
 **User Stories**  
 As a user, I can:
-- [X] add rows to the grid
-- [X] add columns to the grid
+- [X] add rows to the grid (Eva)
+- [X] add columns to the grid (Eva)
 - [ ] remove rows from the grid
 - [ ] remove columns from the grid
 - [ ] select a color from a dropdown menu of colors
