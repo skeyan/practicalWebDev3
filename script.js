@@ -1,3 +1,18 @@
+/* Useful Methods + Properties + Events:
+- `getElementById()`
+- `getElementsByTagName()`
+- `querySelector()`
+- `querySelectorAll()`
+- `createElement()`
+- `appendChild()`
+- `removeChild()`
+- `onclick`
+- `node.children`
+- `node.lastElementChild`
+Useful VSCode Extensions Used:
+- Live Server
+*/
+
 let numRows = 0;
 let numCols = 0;
 let colorSelected;
@@ -57,11 +72,47 @@ function addC() {
 
 //Remove a row
 function removeR() {
-    alert("Clicked Remove Row")
+    let table = document.getElementById("grid")
+
+    if(numRows == 0 || numCols == 0){ // Edge Case
+        alert("Clicked Remove Row With 0 Rows or 0 Cols")
+    } else {
+        // Remove row based on row count
+        table.removeChild(table.lastChild) //delete current row 'tr'
+
+        // Decrement count
+        numRows--
+        if (numRows == 0) { // Reset Table
+            numCols = 0; 
+        }
+        //console.log(numCols, numRows)
+    }
+    
 }
 //Remove a column
 function removeC() {
-    alert("Clicked Remove Col")
+    let table = document.getElementById("grid")
+
+    if(numRows == 0 || numCols == 0){ // Edge Case
+        alert("Clicked Remove Col With 0 Rows or 0 Cols")
+    } else {
+        let curRow = table.getElementsByTagName("tr");
+        for (let i = 0; i < numRows; i++) {
+            curRow[i].removeChild(curRow[i].lastChild)
+        }
+
+        //Decrement count
+        numCols--
+        if (numCols == 0) { // Reset Table
+            for (let i = 0; i < numRows; i++) { 
+                table.removeChild(table.lastChild); 
+            }   // delete 'tr' rows with empty columns for safe-measure..
+            numRows = 0;
+            //console.log(curRow[0]);
+        }
+        //console.log(numCols, numRows)
+    }
+    
 }
 //sets global var for selected color
 function selected(){
