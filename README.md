@@ -16,8 +16,8 @@ To further demonstrate an understanding of git/GitHub, HTML, CSS, JS, DOM manipu
 As a user, I can:
 - [X] add rows to the grid (Eva)
 - [X] add columns to the grid (Eva)
-- [ ] remove rows from the grid (James)
-- [ ] remove columns from the grid (James)
+- [X] remove rows from the grid (James)
+- [X] remove columns from the grid (James)
 - [ ] select a color from a dropdown menu of colors
 - [ ] click on a single cell, changing its color to the currently selected color
 - [ ] fill all uncolored cells with the currently selected color
