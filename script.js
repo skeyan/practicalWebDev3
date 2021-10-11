@@ -126,6 +126,13 @@ function fill(){
 
 function clearAll(){
     alert("Clicked Clear All")
+
+    // clear all cells of their color/restore original color
+   var table = document.getElementsByTagName('td')
+   for(var i=0; i < table.length; i++) {
+       table[i].style.background = ''
+   }
+
 }
 
 function fillU(){
