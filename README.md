@@ -21,5 +21,5 @@ As a user, I can:
 - [X] select a color from a dropdown menu of colors
 - [ ] click on a single cell, changing its color to the currently selected color
 - [ ] fill all uncolored cells with the currently selected color
-- [X] fill all cells with the currently selected color
-- [X] clear all cells/restore all cells to their original/initial color
+- [X] fill all cells with the currently selected color (Jungah)
+- [X] clear all cells/restore all cells to their original/initial color (Jungah)
