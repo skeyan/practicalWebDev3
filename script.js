@@ -121,6 +121,7 @@ function selected(){
 }
 
 function fill(){
+    
     alert("Clicked Fill All")
 
     // check if a color is selected
@@ -148,5 +149,22 @@ function clearAll(){
 }
 
 function fillU(){
-    alert("Clicked Fill All Uncolored")
+    if(colorSelected == null)
+    {
+        alert("No color selected, select a color")
+    }
+    // alert("Clicked Fill All Uncolored")
+    let tableCells = document.getElementsByTagName('td')
+    for(let i = 0; i<tableCells.length; i++){
+        if(tableCells[i].style.background === '')
+        {
+            tableCells[i].style.background = colorSelected
+        }
+    }
+            
+}
+
+function fillCell(){
+    
+    alert("Clicked on Fill Cell")
 }
