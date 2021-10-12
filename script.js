@@ -122,10 +122,29 @@ function selected(){
 
 function fill(){
     alert("Clicked Fill All")
+
+    // check if a color is selected
+    if (colorSelected == null) {
+        return alert("Select a color!")
+    }
+
+    // fill all cells
+    var table = document.getElementsByTagName('td')
+    for(var i=0; i < table.length; i++) {
+        table[i].style.background = colorSelected
+    }
+
 }
 
 function clearAll(){
     alert("Clicked Clear All")
+
+    // clear all cells of their color/restore original color
+   var table = document.getElementsByTagName('td')
+   for(var i=0; i < table.length; i++) {
+       table[i].style.background = ''
+   }
+
 }
 
 function fillU(){
