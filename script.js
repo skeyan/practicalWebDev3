@@ -25,7 +25,7 @@ function addR() {
 
     if (numRows == 0) { // Edge case
         let newCol = document.createElement("td");
-        newCol.onclick = function()
+        newCol.onclick = function() // cell objects will contain fillCell method
         {
             fillCell(newCol)
         }
@@ -39,7 +39,7 @@ function addR() {
         /* Populate the new row with column count */
         for (let i = 0; i < numCols; i++) {
             let newCol = document.createElement("td");
-            newCol.onclick = function()
+            newCol.onclick = function() // cell objects will contain fillCell method
         {
             fillCell(newCol)
         }
@@ -59,7 +59,7 @@ function addC() {
     if (numRows == 0) { // Edge case
         let newRow = document.createElement("tr");
         let newCol = document.createElement("td");
-        newCol.onclick = function()
+        newCol.onclick = function() // cell objects will contain fillCell method
         {
             fillCell(newCol)
         }
@@ -74,7 +74,7 @@ function addC() {
         let curRow = document.getElementsByTagName("tr");
         for (let i = 0; i < numRows; i++) {
             let newCol = document.createElement("td");
-            newCol.onclick = function()
+            newCol.onclick = function() // cell objects will contain fillCell method
             {
                 fillCell(newCol)
             }   
@@ -182,25 +182,10 @@ function fillU(){
 
 
 
-function fillCell(tableCell){
+function fillCell(tableCell){ // cell/s method for changing background color upon click
     if(colorSelected == null)
     {
         alert("No color selected, select a color")
     }
     tableCell.style.background = colorSelected
-    // alert("Clicked on Fill Cell")
-    // let tableCells = document.getElementsByTagName('td')
-
-//     for(let i = 0; i<tableCells.length; i++)
-//     {
-//         tableCells[i].onclick = function()
-//         {
-//             fillSingleCell(this);
-//         }
-//     };
-
-//     function fillSingleCell(tableCell)
-//     {
-//         tableCell.style.background = colorSelected
-// }
 }
